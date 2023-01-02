@@ -1,0 +1,238 @@
+body{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100ch;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+}
+.container .left-side{
+    position: relative;
+    background-color:  #18534F;
+    padding: 10px;
+}
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+.profileText .image{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #fff;
+}
+.profileText .image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    left: 100%;
+   
+    object-fit: cover;
+}
+.profileText h3{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em; 
+
+}
+.profileText h3 span{
+    font-size: 0.8em;
+    font-weight: 300;
+
+}
+.contact{
+    padding-top: 25%;
+}
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contact ul{
+    position: relative;
+}
+.contact ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+
+}
+.contact ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: aliceblue;
+}
+.contact ul li span{
+    color: aliceblue;
+    font-weight: 300;
+
+}
+.contact.education li{
+    margin-bottom: 15px;
+}
+.contact.education h3{
+    font-weight: 300;
+    color: #d8d8d8;
+
+}
+.contact.education h4:nth-child() {
+    font-weight: 300;
+    color: #d8d8d8;
+
+}
+.contact.education h4{
+    font-weight: 300;
+    color: #d8d8d8;
+
+}
+.contact.langue .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color: #FEEAA1;
+    display: block;
+    margin-top: 5px;
+}
+.contact.langue .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #D6955B;
+}
+.container .right-side{
+    position: relative;
+    background-color: #ECF8F6;
+    padding: 40px;
+}
+.about{
+    margin-bottom: 50px;
+
+}
+
+.about:last-child{
+    margin-bottom: 0;
+}
+.title2{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p{
+    color: #333;
+}
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about .box .year-compagny{
+    min-width: 150%;
+}
+.about .box .year-compagny h5{
+    text-transform: uppercase;
+    color: #0b725c;
+    font-weight: 600;
+     
+}
+.about .box .year-compagny h5{
+    text-transform: uppercase;
+    color: #0b725c;
+    font-size: 16px; 
+}
+.about .box .text h4{
+    text-transform: uppercase;
+    color: #0b725c;
+    font-size: 16px; 
+}
+.about-skill .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.about-skill .box h5{
+    text-transform: uppercase;
+    color: #0062ff;
+    font-weight: 300;
+}
+.about-skill .box .pourcentage{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: #FEEAA1;
+    
+}
+.about-skill .box .pourcentage div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #D6955B;
+}
+.about-interest ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.about-interest ul li{
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+@media (max-width:1000px) {
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .about-interest ul{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:600px) {
+    .about .box{
+        flex-direction: column;
+    }
+    .about .box .year-compagny{
+        margin-bottom: 5px;
+    }
+    .about-interest ul{
+        
+        grid-template-columns: repeat(1,1fr);
+    }
+    .about-skill .box{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
