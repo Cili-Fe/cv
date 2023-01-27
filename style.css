@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(128, 128, 128);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +10,7 @@ body{
     width: 100%;
     max-width: 1000px;
     min-height: 1000px;
-    background: #fff;
+    background: rgb(188, 188, 188);
     margin: 50px;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -18,7 +18,7 @@ body{
 }
 .container .left-side{
     position: relative;
-    background-color:  #18534F;
+    background-color:  #538b87;
     padding: 10px;
 }
 .profileText{
